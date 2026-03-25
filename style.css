@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+.bold {
+    font-weight: 900;
+}
 
 .header {
     color: white;
-    background-color: #232f4c;
-    padding: 0 100px;
+    background-color: #1F2937;
+    padding: 0 200px;
 }
 
 .header-menu-container {
@@ -13,10 +23,11 @@
 
 .logo {
     padding: 10px;
-    background-color: #4c232a;
-    font-size: larger;
+    color: #F9FAF8;
+    background-color: chocolate;
+    font-size: 24px;
     font-weight: bolder;
-    border-radius: 20%;
+    border-radius: 50%;
     width: fit-content;
     height: fit-content;
     flex-shrink: 0;
@@ -27,10 +38,76 @@
     /* margin: 0; */
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 32px;
 }
+
+/* .menu li:hover {
+    border-left: 1px solid orange;
+    border-right: 1px solid orange;
+    border-bottom: 1px solid orange;
+} */
 
 .menu a {
     color: white;
     text-decoration: none;
+}
+
+.menu a:active {
+    color: yellowgreen;
+}
+
+.menu a:visited {
+    color: chocolate;
+}
+
+.header-info-container {
+    margin: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.header-info h1, .info p {
+    margin: 0;
+    max-width: 500px;
+    flex: 1;
+}
+
+.header-info h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.header-info p {
+    text-wrap-style: balance;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header-info button {
+    box-sizing: border-box;
+    max-width: fit-content;
+    background-color: #3882F6;
+    color: white;
+    font-weight: 900;
+    min-width: 100px;
+    min-height: 30px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.header-img {
+    flex: none;
+}
+
+ul.card-list {
+    margin: 0;
+    padding: 0;
 }
