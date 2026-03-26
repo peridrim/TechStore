@@ -6,6 +6,11 @@ body {
     font-family: 'Roboto';
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 .bold {
     font-weight: 900;
 }
@@ -14,6 +19,18 @@ body {
     color: white;
     background-color: #1F2937;
     padding: 0 200px;
+    flex: 1;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 2;
+}
+
+.footer {
+    flex: 1;
 }
 
 .header-menu-container {
@@ -35,7 +52,7 @@ body {
 
 .menu {
     padding: 0;
-    /* margin: 0; */
+    margin-left: 32px;
     list-style: none;
     display: flex;
     gap: 32px;
@@ -71,6 +88,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    justify-content: center;
+    flex: 1;
 }
 
 .header-info h1, .info p {
@@ -91,7 +110,7 @@ body {
     color: #E5E7EB;
 }
 
-.header-info button {
+.btn {
     box-sizing: border-box;
     max-width: fit-content;
     background-color: #3882F6;
@@ -100,14 +119,82 @@ body {
     min-width: 100px;
     min-height: 30px;
     border-radius: 10px;
-    flex-shrink: 0;
+    flex: 1 0 auto;
+    border-style: none;
 }
 
 .header-img {
     flex: none;
 }
 
+.main-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 250px;
+}
+
 ul.card-list {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 64px;
+}
+
+ul.card-list p {
+    text-wrap-mode: wrap;
+}
+
+ul.card-list .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    transition: transform 0.3s ease;
+}
+
+ul.card-list .card:hover {
+    transform: scale(1.1);
+}
+
+ul.card-list img {
+    border: 3px solid #3882F6;
+    border-radius: 20px;
+}
+
+section.quote-container p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-wrap-mode: wrap;
+    font-size: larger;
+}
+
+section.quote-container .author {
+    text-align: right;
+    font-size: medium;
+    margin-top: 16px;
+}
+
+div.support-container {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    background-color: #3882F6;
+    padding: 8px 64px;
+    gap: 64px;
+}
+
+div.support-text {
+    color: white;
+}
+
+div.support-text p {
+    font-size: 14px;
+}
+
+div.support-container .btn {
+    border: 2px solid white;
 }
