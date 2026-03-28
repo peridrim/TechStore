@@ -21,7 +21,7 @@ body {
 }
 
 .header {
-    padding: 20px 10%;
+    padding: 20px 20%;
 }
 
 .main {
@@ -102,6 +102,10 @@ body {
     margin: 0;
     max-width: 500px;
     flex: 1;
+}
+
+.header-info h1 {
+    text-wrap-mode: nowrap;
 }
 
 .header-info h1 {
